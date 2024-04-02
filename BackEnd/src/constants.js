@@ -1,1 +1,1 @@
-export const DB_NAME = "saurabhbackend"
+export const DB_NAME = "vrTourismProject"

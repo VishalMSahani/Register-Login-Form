@@ -10,7 +10,7 @@
     <div class="container">
         <div class="form-box">
             <h1 id="title">Sign Up</h1>
-            <form method="POST" action="process.php">
+            <form >
                 <div class="btn-field">
                     <button type="button" id="signUpBtn" onclick="showSignUpForm()">Sign Up</button>
                     <button type="button" id="signInBtn" class="disable" onclick="showSignInForm()">Sign In</button>
@@ -23,7 +23,7 @@
                 
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input class="EmaiId" type="email" placeholder="Email">
+                        <input class="EmailId" type="email" placeholder="Email">
                     </div>
                 
                     <div class="input-field">
@@ -33,16 +33,18 @@
                     <p>Lost password <a href="#">Click Here!</a></p>
                 </div>
                 <div class="submit" id="submitBtn" >
-                    <button onclick="signUpSubmitHandler(event)" type="submit" name="submit">Submit</button>
+                    <button id="signUpSubmit" type="submit" name="submit">Sign up</button>
                 </div>
                 <div class="submit" id="verifyBtn" style="display: none;">
-                    <button type="button" onclick="signInSubmitHandler(event)">Login</button>
+                    <button type="button" id="loginSubmit">Login</button>
                 </div>
             </form>
         </div>
     </div>    
    
 
+
     <script src="index.js"></script>
+   
 </body>
 </html>
